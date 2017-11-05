@@ -1,43 +1,42 @@
-
+﻿<!DOCTYPE html>
 <html>
-<body>
-﻿<h1 id="alfred-an-rhcsa-training-server">alfred : an RHCSA Training Server</h1>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>alfred</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+</head>
+<body><div class="container"><h1 id="alfred-an-rhcsa-training-server">alfred : an RHCSA Training Server</h1>
 
 
 
 <h2 id="download">Download</h2>
 
-<p>Link : <a href="https://drive.google.com/uc?id=1bACVsBepN7okG1w2S0eef2CrS-803nJ8&export=download">https://drive.google.com/uc?id=1bACVsBepN7okG1w2S0eef2CrS-803nJ8&export=download</a></p>
+<p>Link : <a href="https://drive.google.com/uc?id=1bACVsBepN7okG1w2S0eef2CrS-803nJ8&amp;export=download">https://drive.google.com/uc?id=1bACVsBepN7okG1w2S0eef2CrS-803nJ8&amp;export=download</a></p>
 
-<pre class="prettyprint"><code class=" hljs avrasm">md5sum : <span class="hljs-number">058</span>a3bf750d59d61bebd1c9f743a72c3  alfred<span class="hljs-preprocessor">.zip</span>
-sha1sum : d4c5d2fdae1fb50082d9804c74f501c497655efd  alfred<span class="hljs-preprocessor">.zip</span></code></pre>
+<pre><code>md5sum : 058a3bf750d59d61bebd1c9f743a72c3  alfred.zip
+sha1sum : d4c5d2fdae1fb50082d9804c74f501c497655efd  alfred.zip
+</code></pre>
 
-    
-<p>Note : The server is based on a clean CentOS image you can find here (also useful for practice on a clean image). <a href="https://virtualboxes.org/images/centos/">https://virtualboxes.org/images/centos/</a></p>
+<p><strong><em>Note :</em></strong> The server is based on a clean CentOS image you can find here (also useful for practice on a clean image).  <a href="https://virtualboxes.org/images/centos/">https://virtualboxes.org/images/centos/</a></p>
 
-    
-    
 <h2 id="info">Info</h2>
 
 <p>This server provides services needed to integrate with as objectives of RHCSA exam. It provides</p>
 
 <ul>
-<li>LDAP server with TLS</li>
+<li>LDAP server with optional TLS</li>
 <li>yum repository</li>
 <li>ntp server</li>
-<li>nfs server for ldap homes and other filesystems</li>
+<li><p>nfs server for ldap homes and other filesystems</p>
+
+<p>!!!!!!!!!!!!!!!!!!!!!!!!!!!!! IMPORTANT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! <br>
+do NOT practice on this VM !! <br>
+this is only intended to connect your practice VM to it <br>
+for example:- <br>
+    to practice LDAP CLient configuration, you can use this VM as the LDAP server <br>
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p></li>
 </ul>
-
-
-
-<pre class="prettyprint"><code class=" hljs erlang-repl"><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span> <span class="hljs-variable">IMPORTANT</span> <span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span>
-<span class="hljs-function_or_atom">do</span> <span class="hljs-variable">NOT</span> <span class="hljs-function_or_atom">practice</span> <span class="hljs-function_or_atom">on</span> <span class="hljs-function_or_atom">this</span> <span class="hljs-variable">VM</span> <span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span>
-<span class="hljs-function_or_atom">this</span> <span class="hljs-function_or_atom">is</span> <span class="hljs-function_or_atom">only</span> <span class="hljs-function_or_atom">intended</span> <span class="hljs-function_or_atom">to</span> <span class="hljs-function_or_atom">connect</span> <span class="hljs-function_or_atom">your</span> <span class="hljs-function_or_atom">practice</span> <span class="hljs-variable">VM</span> <span class="hljs-function_or_atom">to</span> <span class="hljs-function_or_atom">it</span>
-<span class="hljs-function_or_atom">for</span> <span class="hljs-function_or_atom">example</span>:-
-    <span class="hljs-function_or_atom">to</span> <span class="hljs-function_or_atom">practice</span> <span class="hljs-variable">LDAP</span> <span class="hljs-variable">CLient</span> <span class="hljs-function_or_atom">configuration</span>, <span class="hljs-function_or_atom">you</span> <span class="hljs-function_or_atom">can</span> <span class="hljs-function_or_atom">use</span> <span class="hljs-function_or_atom">this</span> <span class="hljs-variable">VM</span> <span class="hljs-function_or_atom">as</span> <span class="hljs-function_or_atom">the</span> <span class="hljs-variable">LDAP</span> <span class="hljs-function_or_atom">server</span>
-<span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span></code></pre>
-
-
 
 <h2 id="how-to-setup-the-server">How to setup the server:-</h2>
 
@@ -71,18 +70,15 @@ sha1sum : d4c5d2fdae1fb50082d9804c74f501c497655efd  alfred<span class="hljs-prep
 
 <h2 id="ldap-server">ldap server :-</h2>
 
-
-
-<pre class="prettyprint"><code class=" hljs haml">    -<span class="ruby"> server <span class="hljs-symbol">:</span> alfred <span class="hljs-keyword">or</span> its <span class="hljs-constant">IP</span>
-</span>    -<span class="ruby"> basedn <span class="hljs-symbol">:</span> dc=alshakas,dc=com
-</span>    -<span class="ruby"> certificate location <span class="hljs-symbol">:</span> <span class="hljs-symbol">alfred:</span>/etc/openldap/certs/cert.pem
-</span>    -<span class="ruby"> ldap users <span class="hljs-symbol">:-</span>
-</span>        user: newton    password : newton
-        user: tesla password : tesla
-        user: euler password : euler
-    -<span class="ruby"> ldap nfs home directories <span class="hljs-symbol">:</span> <span class="hljs-symbol">alfred:</span>/home/guests</span></code></pre>
-
-
+<pre><code>- server : alfred or its IP
+- basedn : dc=alshakas,dc=com
+- certificate location : alfred:/etc/openldap/certs/cert.pem
+- ldap users :-
+    user: newton    password : newton
+    user: tesla password : tesla
+    user: euler password : euler
+- ldap nfs home directories : alfred:/home/guests
+</code></pre>
 
 <h2 id="ntp-server">ntp server :-</h2>
 
@@ -94,33 +90,25 @@ sha1sum : d4c5d2fdae1fb50082d9804c74f501c497655efd  alfred<span class="hljs-prep
 
 <p>There is a Read-Only filesystem to test nfs mounts :</p>
 
-
-
-<pre class="prettyprint"><code class=" hljs rsl">        filesystem : alfred:/<span class="hljs-built_in">random</span>-thoughts</code></pre>
-
-
+<pre><code>    filesystem : alfred:/random-thoughts
+</code></pre>
 
 <h2 id="yum-repo">yum repo :-</h2>
 
-
-
-<pre class="prettyprint"><code class=" hljs ruby">    location <span class="hljs-symbol">:</span> <span class="hljs-symbol">ftp:</span>/<span class="hljs-regexp">/alfred/pub</span><span class="hljs-regexp">/repo/alshakas</span></code></pre>
+<pre><code>location : ftp://alfred/pub/repo/alshakas
+</code></pre>
 
 <p>To Check :- <br>
-        after you add the repository install the package ‘violla’ <br>
-        Then run ‘violla’</p>
-
-
+After you add the repository install the package <code>violla</code> <br>
+Then run the command <code>violla'</code></p>
 
 <h2 id="passwords">passwords :-</h2>
 
-
-
-<pre class="prettyprint"><code class=" hljs vbnet">    ldap<span class="hljs-comment">'s Manager password : ldap</span>
-    root<span class="hljs-comment">'s password : root</span></code></pre>
+<pre><code>ldap's Manager password : ldap
+root's password : root
+</code></pre>
 
 <h4 id="note">Note :</h4>
 
-<p>CentOS is distrubuted under its own license (GPL).</p>
-</body>
+<p>CentOS is distrubuted under its own license (GPL).</p></div></body>
 </html>
