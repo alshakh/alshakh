@@ -1,0 +1,121 @@
+
+<html>
+<body>
+﻿<h1 id="alfred-an-rhcsa-training-server">alfred : an RHCSA Training Server</h1>
+
+
+
+<h2 id="download">Download</h2>
+
+<p>Link : <a href="https://drive.google.com/asdfadfs">https://drive.google.com/asdfadfs</a></p>
+
+<pre class="prettyprint"><code class=" hljs avrasm">md5sum : <span class="hljs-number">058</span>a3bf750d59d61bebd1c9f743a72c3  alfred<span class="hljs-preprocessor">.zip</span>
+sha1sum : d4c5d2fdae1fb50082d9804c74f501c497655efd  alfred<span class="hljs-preprocessor">.zip</span></code></pre>
+
+<h2 id="info">Info</h2>
+
+<p>This server provides services needed to integrate with as objectives of RHCSA exam. It provides</p>
+
+<ul>
+<li>LDAP server with TLS</li>
+<li>yum repository</li>
+<li>ntp server</li>
+<li>nfs server for ldap homes and other filesystems</li>
+</ul>
+
+
+
+<pre class="prettyprint"><code class=" hljs erlang-repl"><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span> <span class="hljs-variable">IMPORTANT</span> <span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span>
+<span class="hljs-function_or_atom">do</span> <span class="hljs-variable">NOT</span> <span class="hljs-function_or_atom">practice</span> <span class="hljs-function_or_atom">on</span> <span class="hljs-function_or_atom">this</span> <span class="hljs-variable">VM</span> <span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span>
+<span class="hljs-function_or_atom">this</span> <span class="hljs-function_or_atom">is</span> <span class="hljs-function_or_atom">only</span> <span class="hljs-function_or_atom">intended</span> <span class="hljs-function_or_atom">to</span> <span class="hljs-function_or_atom">connect</span> <span class="hljs-function_or_atom">your</span> <span class="hljs-function_or_atom">practice</span> <span class="hljs-variable">VM</span> <span class="hljs-function_or_atom">to</span> <span class="hljs-function_or_atom">it</span>
+<span class="hljs-function_or_atom">for</span> <span class="hljs-function_or_atom">example</span>:-
+    <span class="hljs-function_or_atom">to</span> <span class="hljs-function_or_atom">practice</span> <span class="hljs-variable">LDAP</span> <span class="hljs-variable">CLient</span> <span class="hljs-function_or_atom">configuration</span>, <span class="hljs-function_or_atom">you</span> <span class="hljs-function_or_atom">can</span> <span class="hljs-function_or_atom">use</span> <span class="hljs-function_or_atom">this</span> <span class="hljs-variable">VM</span> <span class="hljs-function_or_atom">as</span> <span class="hljs-function_or_atom">the</span> <span class="hljs-variable">LDAP</span> <span class="hljs-function_or_atom">server</span>
+<span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span><span class="hljs-exclamation_mark">!</span></code></pre>
+
+
+
+<h2 id="how-to-setup-the-server">How to setup the server:-</h2>
+
+<p>IMPORT the server to VirtualBox or VMWare Workstation, then</p>
+
+<ol>
+<li>Run and login as root</li>
+<li>configure a static ip</li>
+<li>in your practice VM add alfred to /etc/hosts</li>
+<li>if your training host can ping alfred, you’re good to go</li>
+</ol>
+
+
+
+<h3 id="setting-up-on-virtualbox">Setting up on VirtualBox</h3>
+
+<p>First File-&gt;import then choose the image. To setup the network, do the following</p>
+
+<ol>
+<li>Create a NAT network from File-&gt;Settings-&gt;Prefrences-&gt;Network and create it with any name</li>
+<li>(on both Server(alfred) and your practice VM), RightClick on VM -&gt; Settings -&gt; Network -&gt; Add a ‘NAT Network’ adapter and connect the network you just created</li>
+<li>Now the both your VM and alfred should ping each other but their IPs will change.</li>
+<li>To setup static IP on alfred :- <br>
+<ul><li>login as root</li>
+<li>find the information (ip and gateway) from “nmcli dev show”</li>
+<li>enter nmtui and setup ‘Manual’ network and enter any IP in the same subnet.</li></ul></li>
+<li>Now alfred should always have the same IP. Go ahead and add it into your VM’s /etc/hosts</li>
+</ol>
+
+
+
+<h2 id="ldap-server">ldap server :-</h2>
+
+
+
+<pre class="prettyprint"><code class=" hljs haml">    -<span class="ruby"> server <span class="hljs-symbol">:</span> alfred <span class="hljs-keyword">or</span> its <span class="hljs-constant">IP</span>
+</span>    -<span class="ruby"> basedn <span class="hljs-symbol">:</span> dc=alshakas,dc=com
+</span>    -<span class="ruby"> certificate location <span class="hljs-symbol">:</span> <span class="hljs-symbol">alfred:</span>/etc/openldap/certs/cert.pem
+</span>    -<span class="ruby"> ldap users <span class="hljs-symbol">:-</span>
+</span>        user: newton    password : newton
+        user: tesla password : tesla
+        user: euler password : euler
+    -<span class="ruby"> ldap nfs home directories <span class="hljs-symbol">:</span> <span class="hljs-symbol">alfred:</span>/home/guests</span></code></pre>
+
+
+
+<h2 id="ntp-server">ntp server :-</h2>
+
+<p>alfred is also an NTP server that you can synchronize you practice VM to.</p>
+
+
+
+<h2 id="nfs-server">nfs server :-</h2>
+
+<p>There is a Read-Only filesystem to test nfs mounts :</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs rsl">        filesystem : alfred:/<span class="hljs-built_in">random</span>-thoughts</code></pre>
+
+
+
+<h2 id="yum-repo">yum repo :-</h2>
+
+
+
+<pre class="prettyprint"><code class=" hljs ruby">    location <span class="hljs-symbol">:</span> <span class="hljs-symbol">ftp:</span>/<span class="hljs-regexp">/alfred/pub</span><span class="hljs-regexp">/repo/alshakas</span></code></pre>
+
+<p>To Check :- <br>
+        after you add the repository install the package ‘violla’ <br>
+        Then run ‘violla’</p>
+
+
+
+<h2 id="passwords">passwords :-</h2>
+
+
+
+<pre class="prettyprint"><code class=" hljs vbnet">    ldap<span class="hljs-comment">'s Manager password : ldap</span>
+    root<span class="hljs-comment">'s password : root</span></code></pre>
+
+<h4 id="note">Note :</h4>
+
+<p>CentOS is distrubuted under its own license (GPL).</p>
+</body>
+</html>
